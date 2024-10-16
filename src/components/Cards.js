@@ -4,7 +4,7 @@ import Card from "./Card";
 function Cards({ courses,category }) {
     // Using spread to avoid direct mutation
     const getCourses = () => {
-      if(category=="All"){
+      if(category==="All"){
         Object.values(courses).flat();
       return Object.values(courses).flat(); // Flattening the array to avoid the push and simplify the logic
       }else{
